@@ -12,9 +12,9 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println("Running socks Service In Port 0.0.0.0:50080")
+	fmt.Println("Running socks Service In Port 0.0.0.0:12580")
 	// Create SOCKS5 proxy on localhost port 8000
-	if err := server.ListenAndServe("tcp", "0.0.0.0:50080"); err != nil {
+	if err := server.ListenAndServe("tcp", "0.0.0.0:12580"); err != nil {
 		panic(err)
 	}
 
